@@ -1,0 +1,17 @@
+bgpRoutes:
+ rpc: get-route-information
+ args_key: destination
+ args:
+  protocol: bgp
+  extensive: True
+ item: route-table/rt
+ key: rt-destination
+ view: bgpView
+
+bgpView:
+ fields:
+  as_path: rt-entry/as-path
+  rt_destination: rt-destination
+  rt_prefix_length: rt-prefix-length
+  preference: rt-entry/preference
+  community: rt-entry/communities/community
