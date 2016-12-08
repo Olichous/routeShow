@@ -185,7 +185,7 @@ if __name__ == "__main__":
        print (" Hop "+str(p)+" : "+as_dict["as"]["name"])
        p+=1
 
-    # Try to associate community with dictionnary community 8218
+    # Try to associate community with dictionnary community YourCommunty
     i=0
     for j in item.community:
      # If community appear in communityYourCommunity print it
