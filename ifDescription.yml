@@ -1,0 +1,15 @@
+ifDescription:
+ rpc: get-interface-information
+ args_key: interface-name
+ args:
+  descriptions: True
+ item: logical-interface
+ key: name
+ view: ifView
+
+ifView:
+ fields:
+  name: name
+  admin-status: admin-status
+  oper-status: oper-status
+  description: description
